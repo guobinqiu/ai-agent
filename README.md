@@ -2,11 +2,11 @@
 
 基于Funcation Call的新版本Reasoning Action流程
 
-新版本:
+## 新版本:
 
 新版本通过把 `tool` 的调用结果作为 `tool 角色`的消息，连同之前的所有对话上下文一起发送给大模型
 
-旧版本:
+## 旧版本(略):
 
 通过 `system prompt` 定义
 
