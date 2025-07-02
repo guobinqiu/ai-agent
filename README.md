@@ -72,7 +72,58 @@ func parseActionResponse(content string) (thought, action, input, finalAnswer st
 	return
 }
 ```
+<<<<<<< HEAD
 ## TODO List
 
 - [x] funcation call
 - [ ] mcp call
+=======
+
+## TODO List
+
+- [x] funcation call
+- [x] mcp call
+
+## Run
+
+```
+go run tools/ip_location_query/main.go &
+go run main.go
+```
+
+## Validate
+
+```
+Initializing client...
+[ip-location-query] Connected to server: ip-location-server 1.0.0
+Initializing client...
+[calculator] Connected to server: calculator-server 1.0.0
+Type your queries or 'quit' to exit.
+User: new york weather and time and 1+2=? where's my ip location
+2025/07/02 22:46:13 function call
+2025/07/02 22:46:13 function call
+2025/07/02 22:46:13 mcp call
+2025/07/02 22:46:13 mcp call
+2025/07/02 22:46:13 工具调用失败: 无效的 IP 地址
+Assistant: Here's the information you requested:
+
+- **Weather in New York**: Sunny, 25°C.
+- **Current Time in New York**: 14:30 PM.
+- **1 + 2 = 3**.
+
+For your IP location, could you provide your IP address so I can check its location?
+
+User: 183.193.157.229
+2025/07/02 22:47:01 mcp call
+Assistant: Here's the location information for the IP address **183.193.157.229**:
+
+- **Country**: China (CN)
+- **Region**: Shanghai (SH)
+- **City**: Shanghai
+- **Coordinates**: Latitude 31.2222, Longitude 121.4581
+- **Timezone**: Asia/Shanghai
+- **ISP**: China Mobile Communications Corporation
+- **Organization**: China Mobile Communications Corporation - Shanghai Company
+
+Let me know if you'd like any additional details!
+```
