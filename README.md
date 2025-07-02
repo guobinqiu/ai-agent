@@ -72,17 +72,11 @@ func parseActionResponse(content string) (thought, action, input, finalAnswer st
 	return
 }
 ```
-<<<<<<< HEAD
-## TODO List
-
-- [x] funcation call
-- [ ] mcp call
-=======
 
 ## TODO List
 
 - [x] funcation call
-- [x] mcp call
+- [X] mcp call
 
 ## Run
 
