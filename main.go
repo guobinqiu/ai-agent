@@ -256,8 +256,12 @@ func (cc *ChatClient) ProcessQuery(userInput string) (string, error) {
 
 			// 先把助理调用工具的声明消息加入上下文
 			cc.messages = append(cc.messages, openai.ChatCompletionMessage{
-				Role:      openai.ChatMessageRoleAssistant,
-				Content:   "",
+				Role:    openai.ChatMessageRoleAssistant,
+				Content: "",
+				// ToolCalls: message.ToolCalls,
+
+				// 只把调用成功的 ToolCall 放进 ToolCalls 里
+				// 失败的调用就不放，让模型自己根据缺少的结果去提问或者调整
 				ToolCalls: successfulToolCalls,
 			})
 
