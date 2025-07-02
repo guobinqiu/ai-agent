@@ -76,4 +76,3 @@ func parseActionResponse(content string) (thought, action, input, finalAnswer st
 
 - [x] funcation call
 - [ ] mcp call
-- [ ] 图片阅读
