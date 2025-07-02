@@ -73,12 +73,21 @@ func parseActionResponse(content string) (thought, action, input, finalAnswer st
 }
 ```
 
-## 运行
+## TODO List
+
+- [x] funcation call
+- [x] mcp call
+
+## Run
 
 ```
 go run tools/ip_location_query/main.go &
 go run main.go
+```
 
+## Validate
+
+```
 Initializing client...
 [ip-location-query] Connected to server: ip-location-server 1.0.0
 Initializing client...
